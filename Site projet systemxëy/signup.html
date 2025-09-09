@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - SystemXëy</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Inscription sur SystemXëy</h1>
+        <h2>Créer un compte</h2>
+    </header>
+
+    <main>
+        <form action="signup.php" method="POST">
+            <label for="userType">Je suis :</label>
+            <select name="userType" id="userType" required>
+                <option value="etudiant">Un étudiant</option>
+                <option value="recruteur">Un recruteur</option>
+            </select>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="name">Nom :</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" name="password" id="password" required>
+
+            <label for="confirmPassword">Confirmer le mot de passe :</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" required>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SystemXëy - Tous droits réservés.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    die("⚠️ Accès interdit !");
+}

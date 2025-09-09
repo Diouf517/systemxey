@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Recruteur - SystemXëy</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Espace Recruteur</h1>
+    </header>
+
+    <main>
+        <section id="profil">
+            <h2>🏢 Profil Recruteur</h2>
+            <p><strong>Nom de l'entreprise :</strong> [Nom de l'entreprise]</p>
+            <p><strong>Secteur :</strong> [Secteur d'activité]</p>
+            <button>Modifier mon profil</button>
+        </section>
+<section id="filtre">
+    <h2>🔎 Filtrer les candidatures</h2>
+    <label for="domaine">Domaine :</label>
+    <select id="domaine">
+        <option value="tous">Tous</option>
+        <option value="informatique">Informatique</option>
+        <option value="marketing">Marketing</option>
+        <option value="finance">Finance</option>
+    </select>
+
+    <label for="experience">Expérience :</label>
+    <select id="experience">
+        <option value="tous">Tous niveaux</option>
+        <option value="debutant">Débutant</option>
+        <option value="intermediaire">Intermédiaire</option>
+        <option value="expert">Expert</option>
+    </select>
+
+    <label for="competences">Compétences :</label>
+    <input type="text" id="competences" placeholder="Ex: PHP, UI/UX, Data Analysis">
+
+    <label for="statut">Statut :</label>
+    <select id="statut">
+        <option value="tous">Tous</option>
+        <option value="nouvelle">Nouvelle candidature</option>
+        <option value="attente">En attente</option>
+        <option value="accepte">Accepté</option>
+    </select>
+
+    <button onclick="filtrerCandidatures()">Appliquer le filtre</button>
+</section>
+
+        <section id="offres">
+            <h2>💼 Gérer mes offres d'emploi</h2>
+            <button>Publier une nouvelle offre</button>
+            <ul>
+                <li>Développeur Web - <strong>Ouvert</strong> <button>Modifier</button></li>
+                <li>Data Analyst - <strong>En attente</strong> <button>Modifier</button></li>
+            </ul>
+        </section>
+
+        <section id="candidatures">
+            <h2>📄 Candidatures reçues</h2>
+            <p>🔔 3 nouveaux candidats :</p>
+            <ul>
+                <li>Cheikh Ndiaye - Développeur Web <button>Voir Profil</button></li>
+                <li>Fatou Diop - Analyste Data <button>Voir Profil</button></li>
+            </ul>
+        </section>
+
+        <section id="discussion">
+            <h2>💬 Discussion avec les candidats</h2>
+            <p>Répondez aux étudiants directement :</p>
+            <div class="chat-box">
+                <textarea placeholder="Envoyer un message..."></textarea>
+                <button>Envoyer</button>
+            </div>
+        </section>
+        
+        <a href="index.html" class="cta">Retour à l'accueil</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SystemXëy - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
